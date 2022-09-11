@@ -1,0 +1,50 @@
+[
+  {
+    "DownstreamPathTemplate": "/api/cuentas",
+    "DownstreamScheme": "http",
+    "DownstreamHostAndPorts": [
+      {
+        "Host": "localhost",
+        "Port": 36778
+      }
+    ],
+    "UpstreamPathTemplate": "/cuentas",
+    "UpstreamHttpMethod": [ "Get", "Post" ]
+  },
+  {
+    "DownstreamPathTemplate": "/api/cuentas/{id}",
+    "DownstreamScheme": "http",
+    "DownstreamHostAndPorts": [
+      {
+        "Host": "localhost",
+        "Port": 36778
+      }
+    ],
+    "UpstreamPathTemplate": "/cuentas/{id}",
+    "UpstreamHttpMethod": [ "Get", "Put", "Delete" ]
+  },
+  {
+    "DownstreamPathTemplate": "/api/cuentas/reportes",
+    "DownstreamScheme": "http",
+    "DownstreamHostAndPorts": [
+      {
+        "Host": "localhost",
+        "Port": 36778
+      }
+    ],
+    "UpstreamPathTemplate": "/cuentas/reportes",
+    "UpstreamHttpMethod": [ "Get" ]
+  },
+  {
+    "DownstreamPathTemplate": "/api/cuentas/saldo{id}",
+    "DownstreamScheme": "http",
+    "DownstreamHostAndPorts": [
+      {
+        "Host": "localhost",
+        "Port": 36778
+      }
+    ],
+    "UpstreamPathTemplate": "/cuentas/saldo{id}",
+    "UpstreamHttpMethod": [ "Put" ]
+  }
+]

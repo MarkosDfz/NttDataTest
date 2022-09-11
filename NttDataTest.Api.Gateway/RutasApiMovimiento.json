@@ -1,0 +1,26 @@
+[
+  {
+    "DownstreamPathTemplate": "/api/movimientos",
+    "DownstreamScheme": "http",
+    "DownstreamHostAndPorts": [
+      {
+        "Host": "localhost",
+        "Port": 36512
+      }
+    ],
+    "UpstreamPathTemplate": "/movimientos",
+    "UpstreamHttpMethod": [ "Get", "Post" ]
+  },
+  {
+    "DownstreamPathTemplate": "/api/movimientos/{id}",
+    "DownstreamScheme": "http",
+    "DownstreamHostAndPorts": [
+      {
+        "Host": "localhost",
+        "Port": 36512
+      }
+    ],
+    "UpstreamPathTemplate": "/movimientos/{id}",
+    "UpstreamHttpMethod": [ "Get" ]
+  }
+]

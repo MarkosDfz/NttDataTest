@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="Ardalis.Specification" Version="5.2.0" />
+	<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+	<PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+	<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.2.1" />
+	<PackageReference Include="MediatR" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NttDataTest.Common.Transaction\NttDataTest.Common.Transaction.csproj" />
+    <ProjectReference Include="..\NttDataTest.Domain.Transaction\NttDataTest.Domain.Transaction.csproj" />
+    <ProjectReference Include="..\NttDataTest.Services.Proxies.Transaction\NttDataTest.Services.Proxies.Transaction.csproj" />
+  </ItemGroup>
+	
+</Project>

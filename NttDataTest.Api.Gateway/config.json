@@ -1,0 +1,14 @@
+{
+  "SwaggerEndPoints": [
+    {
+      "Key": "integracion",
+      "Config": [
+        {
+          "Name": "Integracion API",
+          "Version": "v1",
+          "Url": "http://localhost:8022/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}
