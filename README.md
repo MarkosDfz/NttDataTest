@@ -7,3 +7,4 @@ Recuros para el proyecto:
 [Colección de endpoints de Postman](https://drive.google.com/file/d/13jH3zeie2BWln8oKZwvm9H7r3R-Tsjcz/view?usp=sharing)
 
 | <img src="https://raw.githubusercontent.com/MarkosDfz/movies_app/master/assets/img/arquitectura.jpg?token=GHSAT0AAAAAABYUS54S4W7EJWBZG6L7ZB72YY632SQ" height="700"/> |
+|--|
