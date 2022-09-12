@@ -4,8 +4,8 @@
     "DownstreamScheme": "http",
     "DownstreamHostAndPorts": [
       {
-        "Host": "localhost",
-        "Port": 52724
+        "Host": "nttdatatest.api.client",
+        "Port": 80
       }
     ],
     "UpstreamPathTemplate": "/clientes",
@@ -16,8 +16,8 @@
     "DownstreamScheme": "http",
     "DownstreamHostAndPorts": [
       {
-        "Host": "localhost",
-        "Port": 52724
+        "Host": "nttdatatest.api.client",
+        "Port": 80
       }
     ],
     "UpstreamPathTemplate": "/clientes/{id}",

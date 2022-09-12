@@ -1,0 +1,36 @@
+version: '3.4'
+
+services:
+  nttdatatest.api.client:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "52724:80"
+
+  nttdatatest.api.transaction:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ApiUrls__CuentaApiUrl=http://nttdatatest.api.gateway
+    ports:
+      - "36512:80"
+
+
+  nttdatatest.api.account:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ApiUrls__ClienteApiUrl=http://nttdatatest.api.gateway
+      - ApiUrls__MovimientoApiUrl=http://nttdatatest.api.gateway
+    ports:
+      - "36778:80"
+
+
+  nttdatatest.api.gateway:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - nttdatatest.api.client
+      - nttdatatest.api.transaction
+      - nttdatatest.api.account
+    ports:
+      - "41733:80"
+

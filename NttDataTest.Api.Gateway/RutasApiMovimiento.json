@@ -4,8 +4,8 @@
     "DownstreamScheme": "http",
     "DownstreamHostAndPorts": [
       {
-        "Host": "localhost",
-        "Port": 36512
+        "Host": "nttdatatest.api.transaction",
+        "Port": 80
       }
     ],
     "UpstreamPathTemplate": "/movimientos",
@@ -16,8 +16,8 @@
     "DownstreamScheme": "http",
     "DownstreamHostAndPorts": [
       {
-        "Host": "localhost",
-        "Port": 36512
+        "Host": "nttdatatest.api.transaction",
+        "Port": 80
       }
     ],
     "UpstreamPathTemplate": "/movimientos/{id}",

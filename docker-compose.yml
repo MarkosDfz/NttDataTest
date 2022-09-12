@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+  nttdatatest.api.client:
+    image: ${DOCKER_REGISTRY-}nttdatatestapiclient
+    build:
+      context: .
+      dockerfile: NttDataTest.Api.Client/Dockerfile
+  nttdatatest.api.transaction:
+    image: ${DOCKER_REGISTRY-}nttdatatestapitransaction
+    build:
+      context: .
+      dockerfile: NttDataTest.Api.Transaction/Dockerfile
+
+  nttdatatest.api.account:
+    image: ${DOCKER_REGISTRY-}nttdatatestapiaccount
+    build:
+      context: .
+      dockerfile: NttDataTest.Api.Account/Dockerfile
+
+  nttdatatest.api.gateway:
+    image: ${DOCKER_REGISTRY-}nttdatatestapigateway
+    build:
+      context: .
+      dockerfile: NttDataTest.Api.Gateway/Dockerfile
+
+networks:
+  default:
+    external:
+      name: microservicenet
+
+

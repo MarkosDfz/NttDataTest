@@ -5,8 +5,8 @@
     "DownstreamScheme": "http",
     "DownstreamHostAndPorts": [
       {
-        "Host": "localhost",
-        "Port": 52724
+        "Host": "nttdatatest.api.client",
+        "Port": 80
       }
     ],
     "UpstreamPathTemplate": "/clientes",
@@ -17,8 +17,8 @@
     "DownstreamScheme": "http",
     "DownstreamHostAndPorts": [
       {
-        "Host": "localhost",
-        "Port": 52724
+        "Host": "nttdatatest.api.client",
+        "Port": 80
       }
     ],
     "UpstreamPathTemplate": "/clientes/{id}",
@@ -30,8 +30,8 @@
     "DownstreamScheme": "http",
     "DownstreamHostAndPorts": [
       {
-        "Host": "localhost",
-        "Port": 36778
+        "Host": "nttdatatest.api.account",
+        "Port": 80
       }
     ],
     "UpstreamPathTemplate": "/cuentas",
@@ -42,8 +42,8 @@
     "DownstreamScheme": "http",
     "DownstreamHostAndPorts": [
       {
-        "Host": "localhost",
-        "Port": 36778
+        "Host": "nttdatatest.api.account",
+        "Port": 80
       }
     ],
     "UpstreamPathTemplate": "/cuentas/{id}",
@@ -54,8 +54,8 @@
     "DownstreamScheme": "http",
     "DownstreamHostAndPorts": [
       {
-        "Host": "localhost",
-        "Port": 36778
+        "Host": "nttdatatest.api.account",
+        "Port": 80
       }
     ],
     "UpstreamPathTemplate": "/cuentas/reportes",
@@ -66,8 +66,8 @@
     "DownstreamScheme": "http",
     "DownstreamHostAndPorts": [
       {
-        "Host": "localhost",
-        "Port": 36778
+        "Host": "nttdatatest.api.account",
+        "Port": 80
       }
     ],
     "UpstreamPathTemplate": "/cuentas/saldo{id}",
@@ -79,8 +79,8 @@
     "DownstreamScheme": "http",
     "DownstreamHostAndPorts": [
       {
-        "Host": "localhost",
-        "Port": 36512
+        "Host": "nttdatatest.api.transaction",
+        "Port": 80
       }
     ],
     "UpstreamPathTemplate": "/movimientos",
@@ -91,8 +91,8 @@
     "DownstreamScheme": "http",
     "DownstreamHostAndPorts": [
       {
-        "Host": "localhost",
-        "Port": 36512
+        "Host": "nttdatatest.api.transaction",
+        "Port": 80
       }
     ],
     "UpstreamPathTemplate": "/movimientos/{id}",

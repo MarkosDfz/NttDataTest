@@ -4,8 +4,8 @@
     "DownstreamScheme": "http",
     "DownstreamHostAndPorts": [
       {
-        "Host": "localhost",
-        "Port": 36778
+        "Host": "nttdatatest.api.account",
+        "Port": 80
       }
     ],
     "UpstreamPathTemplate": "/cuentas",
@@ -16,8 +16,8 @@
     "DownstreamScheme": "http",
     "DownstreamHostAndPorts": [
       {
-        "Host": "localhost",
-        "Port": 36778
+        "Host": "nttdatatest.api.account",
+        "Port": 80
       }
     ],
     "UpstreamPathTemplate": "/cuentas/{id}",
@@ -28,8 +28,8 @@
     "DownstreamScheme": "http",
     "DownstreamHostAndPorts": [
       {
-        "Host": "localhost",
-        "Port": 36778
+        "Host": "nttdatatest.api.account",
+        "Port": 80
       }
     ],
     "UpstreamPathTemplate": "/cuentas/reportes",
@@ -40,8 +40,8 @@
     "DownstreamScheme": "http",
     "DownstreamHostAndPorts": [
       {
-        "Host": "localhost",
-        "Port": 36778
+        "Host": "nttdatatest.api.account",
+        "Port": 80
       }
     ],
     "UpstreamPathTemplate": "/cuentas/saldo{id}",
