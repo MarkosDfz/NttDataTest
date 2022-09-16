@@ -13,6 +13,7 @@ using NttDataTest.Persistence.Client;
 using NttDataTest.Persistence.Client.Repository;
 using NttDataTest.Services.Client.Behaviors;
 using NttDataTest.Services.Client.Interfaces;
+using System.Globalization;
 using System.Reflection;
 
 namespace NttDataTest.Api.Client
@@ -62,6 +63,11 @@ namespace NttDataTest.Api.Client
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "NttDataTest.Api.Client v1"));
             }
+
+            var cultureInfo = new CultureInfo("es-ES");
+
+            CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 
             app.UseRouting();
 

@@ -31,7 +31,7 @@ namespace NttDataTest.Services.Client.Commands
         public string ClienteGuid { get; set; }
     }
 
-    class ClientCreateEventHandler : IRequestHandler<ClientCreateCommand, Response<string>>
+    public class ClientCreateEventHandler : IRequestHandler<ClientCreateCommand, Response<string>>
     {
         private readonly IRepositoryAsync<Cliente> _repositoryAsync;
         private readonly IMapper _mapper;

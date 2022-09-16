@@ -14,6 +14,7 @@ using NttDataTest.Services.Proxies.Transaction;
 using NttDataTest.Services.Proxies.Transaction.Account;
 using NttDataTest.Services.Transaction.Behaviors;
 using NttDataTest.Services.Transaction.Interfaces;
+using System.Globalization;
 using System.Reflection;
 
 namespace NttDataTest.Api.Transaction
@@ -68,6 +69,11 @@ namespace NttDataTest.Api.Transaction
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "NttDataTest.Api.Transaction v1"));
             }
+
+            var cultureInfo = new CultureInfo("es-ES");
+
+            CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 
             app.UseRouting();
 

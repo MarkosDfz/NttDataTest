@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "NttDataTest.Common.Account": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:55806;http://localhost:55807"
+    }
+  }
+}
